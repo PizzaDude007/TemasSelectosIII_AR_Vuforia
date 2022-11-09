@@ -18,9 +18,9 @@ public class ControlNivel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.getKeyDown(KeyCode.Space))
-        //{
-        //    Instantiate(pelota, inicioPelota); //cada que se presione espacio se genera pelota
-        //}
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(pelota, inicioPelota); //cada que se presione espacio se genera pelota
+        }
     }
 }
