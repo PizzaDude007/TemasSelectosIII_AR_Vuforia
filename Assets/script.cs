@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class script : MonoBehaviour
 {
-    public GameObject pelota;
+    //public GameObject pelota;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -16,7 +16,7 @@ public class script : MonoBehaviour
         }
     }
 
-    public bool activePelota;
+    //public bool activePelota;
     // Start is called before the first frame update
     void Start()
     {

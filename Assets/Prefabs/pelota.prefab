@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 7969642346901545617}
   - component: {fileID: 8060995290227004190}
   - component: {fileID: 8060995290227004177}
-  - component: {fileID: 8060995290227004189}
   - component: {fileID: 8060995290227004176}
   - component: {fileID: 8060995290227004188}
-  - component: {fileID: 8060995290227004191}
+  - component: {fileID: 744626960497791819}
   m_Layer: 0
   m_Name: pelota
   m_TagString: Untagged
@@ -87,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8060995290227004189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7865988802065553430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91200ed70da80ee4cb49c673635bceff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pelota: {fileID: 0}
-  activePelota: 0
 --- !u!135 &8060995290227004176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -130,15 +115,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &8060995290227004191
-ConstantForce:
+--- !u!114 &744626960497791819
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7865988802065553430}
   m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91200ed70da80ee4cb49c673635bceff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pelota: {fileID: 0}
+  activePelota: 0
