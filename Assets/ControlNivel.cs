@@ -9,6 +9,7 @@ public class ControlNivel : MonoBehaviour
     public GameObject ReiniciaBoton;
     public GameObject pelota;
     public Transform inicioPelota;
+    public bool ganaste;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class ControlNivel : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         print("ganaste");
+        ganaste = true;
     }
 
     // Update is called once per frame
@@ -31,7 +33,8 @@ public class ControlNivel : MonoBehaviour
 
         if (pelotaActiva == null)
         {
-            perdio();
+            //perdio(); //se quitó el botón
+            reinicia(); //crea nueva pelota
         }
     }
 
@@ -42,7 +45,7 @@ public class ControlNivel : MonoBehaviour
         ReiniciaBoton.SetActive(false);
     }
 
-    public void perdio()
+    public void perdio() //no se está ocupando
     {
         ReiniciaBoton.SetActive(true);
     }
